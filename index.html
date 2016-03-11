@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Magic Calculator</title>
+        <script src="https://code.angularjs.org/1.4.0-rc.2/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.4.0-rc.2/angular-mocks.js"></script>
+    </head>
+    <body>
+        <input id="x" type="text">
+        <input id="y" type="text">
+        <input id="add" type="button" value="Add Numbers">
+        Result: <span id="result" />
+
+        <div ng-controller="CalculatorCtrl as calculatorCtrl">
+            <input type="number" ng-model="calculatorCtrl.x">
+            <input type="number" ng-model="calculatorCtrl.y">
+            <strong>{{calculatorCtrl.z}}</strong>
+            <input type="button" ng-click="calculatorCtrl.sum()" value="+">
+        </div>
+        <script type="text/javascript" src="lib/calculator.js"></script>
+        <script src="lib/app.js"></script>
+    </body>
+</html>
