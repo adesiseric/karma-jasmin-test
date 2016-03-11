@@ -2,6 +2,10 @@
 
 ### Karma-Jasmine test example
 
-> npm install
+Install dependencies
+>
+    $ npm install
 
-> npm test
+Run tests
+>
+    $ npm test
